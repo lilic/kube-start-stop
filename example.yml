@@ -1,0 +1,20 @@
+apiVersion: scheduler.io/v1alpha1
+kind: Schedule
+metadata:
+  name: schedule
+  labels:
+    schedule: weekly-dev
+spec:
+  schedules:
+  - replicas: 0
+    selector: my-deployment 
+    start:
+      day: Monday 
+      time:
+        hour: 16 
+        minute: 30
+    stop:
+      day: friday
+      time:
+        hour: 8
+        minute: 10

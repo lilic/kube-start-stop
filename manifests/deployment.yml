@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kubestartstop
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: kubestartstop
+    spec:
+      containers:
+      - name: kubestartstop
+        image: lilic/kube-start-stop:0.0.1 
