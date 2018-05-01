@@ -1,6 +1,8 @@
 # kube-start-stop
 
-Automatically start and stop Kubernetes resources in the namespace. Schedule your resources to automitcly scale down during a desired time period, e.g. scale down your dev workloads during the weekend.
+Schedule Scaling of Kubernetes Resources.
+
+Automatically start and stop Kubernetes resources in the namespace. Schedule your resources to automatically scale down during a desired time period, e.g. scale down your dev workloads during the weekend.
 
 # Usage
 
